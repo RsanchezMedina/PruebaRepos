@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PruebaRepo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Name :</string>
+    <string name="full_name">Full Name :</string>
+    <string name="description">Description :</string>
+    <string name="link">"Link : "</string>
+    <string name="list_repo">Repositories</string>
+    <string name="query_name">"Enter the name to search "</string>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/contentItemRepository">
+
+    <TextView
+        android:id="@+id/tvNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="1"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNameDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textName"
+        app:layout_constraintTop_toTopOf="@+id/tvNumber" />
+
+    <TextView
+        android:id="@+id/tvFullNameDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textFullName"
+        app:layout_constraintTop_toTopOf="@+id/textFullName" />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/description"
+        android:textColor="@android:color/tertiary_text_light"
+        app:layout_constraintStart_toStartOf="@+id/textFullName"
+        app:layout_constraintTop_toBottomOf="@+id/tvFullNameDetails" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/name"
+        app:layout_constraintStart_toEndOf="@+id/tvNumber"
+        app:layout_constraintTop_toTopOf="@+id/tvNumber" />
+
+    <TextView
+        android:id="@+id/textFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/full_name"
+        app:layout_constraintStart_toStartOf="@+id/textName"
+        app:layout_constraintTop_toBottomOf="@+id/textName" />
+
+    <TextView
+        android:id="@+id/tvDescriptionDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textDescription"
+        app:layout_constraintTop_toTopOf="@+id/textDescription" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/bg_separator"
+        app:layout_constraintTop_toBottomOf="@+id/textLink"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/link"
+        app:layout_constraintStart_toStartOf="@+id/textDescription"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescriptionDetails" />
+
+    <TextView
+        android:id="@+id/tvLinkDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/textLink"
+        app:layout_constraintStart_toEndOf="@+id/textLink"
+        app:layout_constraintTop_toTopOf="@+id/textLink" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
